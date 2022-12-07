@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Piedra papel o tijera </title>
+    <script>
+        
+     // Funcion aleatorio
+     function aleatorio (max, min){
+         return Math.floor (Math.random () * (max - min + 1) + min)
+     }
+
+
+      alert ("Tijera corta a papel, papel tapa a piedra, piedra aplasta a lagarto, lagarto envenena a Spock, Spock rompe a tijera, tijera decapita a lagarto, lagarto devora a papel, papel desautoriza a Spock, Spock vaporiza a piedra, y como siempre, piedra aplasta a tijera")
+      // 1 es piedra, 2 es papel y 3 es tijera
+      let jugador = 0
+      let pc = aleatorio (5, 1)
+      jugador = prompt ("Elije 1 para piedra, 2 para tijera, 3 para papel, 4 spock o 5 lagarto")
+     
+      //Elije jugador
+
+      if (jugador == 1 ){
+          alert ("Elejiste piedra 🪨")
+      } else if (jugador == 2 ){
+          alert ("Elejiste papel 🧻")
+      } else if (jugador == 3){
+          alert ("Elejiste tijera ✂️")
+      } else if (jugador == 4){
+          alert ("Elejiste spock 🧍")
+      } else if (jugador == 5){
+          alert ("Elejiste lagarto 🦎")
+      } else {alert ("Perdiste")}
+      
+    
+
+      //Elije pc
+
+      if (pc == 1 ){
+          alert ("PC elije piedra 🪨")
+      } else if (pc == 2 ){
+          alert ("PC elije papel 🧻")
+      } else if (pc == 3){
+          alert ("PC elije tijera ✂️")
+      } else if (pc == 4){
+          alert ("PC elije spock 🧍")
+      } else if (pc == 5){
+          alert ("PC elije lagarto 🦎")
+      }
+
+      //Combate 
+
+      if (jugador == pc){
+          alert ("Empate")
+      } else if ((jugador - pc) == 1){
+          alert ("Ganaste")
+      } else if ((jugador - pc) == 3){
+          alert ("Ganaste")
+      } else if ((jugador - pc) == -2){
+          alert ("Ganaste")
+      } else if ((jugador - pc) == -4){
+          alert ("Ganaste")
+      } else {
+          alert ("Perdiste")
+      }
+      
+
+    </script>
+</head>
+<body>
+    <h1>Piedra, papel, tijera lagarto o spock</h1>
+    <h3>Tijera corta a papel, papel tapa a piedra, piedra aplasta a lagarto, lagarto envenena a Spock, Spock rompe a tijera, tijera decapita a lagarto, lagarto devora a papel, papel desautoriza a Spock, Spock vaporiza a piedra, y como siempre, piedra aplasta a tijera</h3>
+
+</body>
+</html>
